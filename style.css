@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eee;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #aaa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo img {
+    max-width: 150px;
+
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+aside {
+    background-color: aqua;
+    min-width: 500px;
+    height: 1000px;
+}
+
+section {
+    width: 1340px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 15px;
+}
+section div{
+    width: 300px;
+    margin: 0 auto;
+    height: 300px;
+    box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+.content img{
+    max-width: 100%;
+}
+article {
+   border: 1px solid #eee;
+    width: 1340px;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+.form{
+    margin: 0 auto;
+    padding: 10px;
+    width: 1000px;
+    height: 320px;
+    
+}
+.form input{
+    padding: 10px;
+    width: 70%;
+    margin: 10px;
+}
+.form input[type="submit"]{
+    padding: 10px;
+    width: 20%;
+    margin: 10px;
+    align-items: center;
+    background-color: teal;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.form ::placeholder{
+    color: #aaa;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    color: #fff;
+    margin-top: 10px;
+}
+footer p{
+    padding: 10px;
+    margin-top: 20px;
+}
